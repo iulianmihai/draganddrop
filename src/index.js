@@ -1,4 +1,5 @@
 const _ = require('underscore');
+require('../style/style.less');
 const dragAndDropPlaygroundTemplate = require('../templates/template.html');
 
 function DrangAndDropPlayground (element, options) {
