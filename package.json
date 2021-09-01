@@ -1,0 +1,44 @@
+{
+  "name": "draganddropplayground",
+  "version": "1.0.0",
+  "description": "Playground for drag and drop",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/iulianmihai/draganddropplayground.git"
+  },
+  "keywords": [
+    "drag",
+    "and",
+    "drop"
+  ],
+  "author": "Iulian Mihai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iulianmihai/draganddropplayground/issues"
+  },
+  "homepage": "https://github.com/iulianmihai/draganddropplayground#readme",
+  "devDependencies": {
+    "babel-jest": "^27.1.0",
+    "html-loader": "^0.5.5",
+    "html-loader-jest": "^0.2.1",
+    "jest": "^27.1.0",
+    "jest-cli": "^27.1.0",
+    "underscore": "^1.13.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.html?$": "html-loader-jest"
+    },
+    "testEnvironment": "jsdom",
+    "collectCoverage": true
+  }
+}
